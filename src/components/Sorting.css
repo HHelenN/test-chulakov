@@ -1,0 +1,28 @@
+.sorting {
+    width: 350px;
+    height: 110px;
+
+}
+
+.sorting--type {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sorting--type button {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.sorting--order {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sorting--order button {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+

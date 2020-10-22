@@ -1,0 +1,26 @@
+.table-item {
+    width: 100%;
+    background: antiquewhite;
+    padding: 10px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.table-item div {
+    align-items: center;
+}
+
+.table-item--name-container__img {
+    width: 48px;
+    height: 48px;
+}
+
+.table-item--name-container {
+    width: 250px;
+    display: flex;
+    justify-content: left;
+
+}
