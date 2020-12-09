@@ -3,6 +3,9 @@
     height: 110px;
 
 }
+.sorting--h {
+    margin-bottom: 5px;
+}
 
 .sorting--type {
     display: flex;
@@ -10,9 +13,16 @@
 }
 
 .sorting--type button {
-    width: 100%;
+    width: 32%;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+    border: 1px solid darkgray;
+}
+
+.sorting--type button.active,
+.sorting--order button.active {
+    border: 3px solid darkgoldenrod;
+    outline: none;
 }
 
 .sorting--order {
@@ -21,8 +31,10 @@
 }
 
 .sorting--order button {
-    width: 100%;
+    width: 49%;
     padding: 5px;
     margin-bottom: 10px;
+    border: 1px solid darkgray;
 }
+
 

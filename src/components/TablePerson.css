@@ -2,11 +2,15 @@
     width: 100%;
     background: antiquewhite;
     padding: 10px;
+    margin-bottom: 5px;
     border: 1px solid gray;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+
+    border-bottom-left-radius: 70em;
+    border-top-left-radius: 70em;
 }
 
 .table-item div {

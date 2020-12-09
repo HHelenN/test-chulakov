@@ -1,0 +1,20 @@
+{
+  "sorting": {
+    "title": "Sorting",
+    "name": "Name",
+    "age": "Age",
+    "asc": "Ascending",
+    "desc": "Descending"
+  },
+  "view": {
+    "title": "View",
+    "table": "Table",
+    "preview": "Preview"
+  },
+  "searchBar": {
+    "placeholder": "Search by first and last name..."
+  },
+  "person": {
+    "age": "years"
+  }
+}

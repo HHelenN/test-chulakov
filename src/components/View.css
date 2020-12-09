@@ -2,6 +2,18 @@
     width: 250px;
     height: 110px;
     margin-left: auto;
+
+}
+
+.view__header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.view__change-language button {
+    height: 20px;
+    font-size: 12px;
 }
 
 .view--type {
@@ -14,4 +26,5 @@
     width: 100%;
     padding: 5px;
     align-items: stretch;
+    border: 1px solid darkgray;
 }

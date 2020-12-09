@@ -5,8 +5,12 @@ import * as images from "../images";
 import {declOfNum} from "../helper";
 import React from "react";
 import './PreviewPerson.css'
+import {useTranslation} from "react-i18next";
 
-export function PreviewPerson({id, favourite, phrase, video, name, age, phone, image}) {
+
+export function PreviewPerson({id, onClickFavorite, favorite, phrase, video, name, age, phone, image}) {
+  const { t, i18n } = useTranslation()
+
 
   const thisVideo = () => {
     if(!video) {
@@ -23,9 +27,9 @@ export function PreviewPerson({id, favourite, phrase, video, name, age, phone, i
           <div className={"preview-item--name-container"}>
             <div className={'preview-item--name-container__img'}><img src={images[image]} /></div>
             <div className={'preview-item--name-container__name'}>{name}</div>
-            <div><img src={images.star} style={favourite ? {opacity: '100%'} : {opacity: '50%'}}/></div>
+            <div><img onClick={onClickFavorite} src={images.star} style={favorite ? {opacity: '100%'} : {opacity: '50%'}}/></div>
           </div>
-          <div>{declOfNum(age, ['год', 'года', 'лет'])}</div>
+          <div>{i18n.language === "ru" ? declOfNum(age, ['год', 'года', 'лет']) : age + " " + t("person.age")}</div>
           <div>{phone}</div>
           <div>{phrase}</div>
         </div>
